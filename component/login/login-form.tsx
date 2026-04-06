@@ -33,7 +33,7 @@ export default function LoginForm() {
             router.push("/");
         } catch (err) {
             if (err instanceof ApiError) {
-                setError(err.message);
+                setError("Invalid credentials");
             } else {
                 setError("Invalid credentials");
             }
