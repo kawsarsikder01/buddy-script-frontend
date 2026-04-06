@@ -35,7 +35,7 @@ export default function LoginForm() {
             if (err instanceof ApiError) {
                 setError(err.message);
             } else {
-                setError("Unable to login. Please try again.");
+                setError("Invalid credentials");
             }
         } finally {
             setLoading(false);
